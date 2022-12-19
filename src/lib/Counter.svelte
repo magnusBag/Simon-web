@@ -13,17 +13,27 @@
 
 <svelte:window bind:scrollY={y} bind:outerHeight={maxY} />
 
-<div
-  class="flex flex-col gap-20 items-center p-10 absolute "
-  style="transform:translate(center, -{(y / maxY) * 10.1}%)"
->
+<div class="flex flex-col gap-20 p-10">
   {#each sources as src}
-    <img
-      style="object-position: 50% clamp(0%,{(y / maxY) *
-        120}%, 100%; user-select: none;"
-      {src}
-      alt=""
-    />
+    <div class="flex flex-col items-center">
+      <img
+        style="object-position: 50% clamp(0%,{(y / maxY) *
+          50}%, 100%; user-select: none;"
+        {src}
+        alt=""
+      />
+      <p class="text-white w-1/2">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+      </p>
+    </div>
   {/each}
 </div>
 
