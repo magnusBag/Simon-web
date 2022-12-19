@@ -12,18 +12,18 @@
   <Counter />
   <div>
     <div
-      class="paralax scale-50"
-      style="background-image: url(../dots2.png);background-position-y:{y /
-        70}px; scale: {y / maxY / 15 + 1}"
+      class="paralax"
+      style="background-image: url(https://i.ibb.co/qxK7Hsz/dots2.png);background-position-y:{y /
+        100}px; scale: {y / maxY / 30 + 1}"
     />
     <div
-      class="paralax hue-rotate-90"
-      style="background-image:url(../dots1.png); background-position-y:{y /
+      class="paralax"
+      style="background-image:url(https://i.ibb.co/vDff6hH/dots1.png); background-position-y:{y /
         500}px; scale: {y / maxY / 25 + 1}"
     />
     <div
       class="paralax"
-      style="background-image: url(../dots3.png);background-position-y:{y /
+      style="background-image: url(https://i.ibb.co/LRLjy1d/dots3.png);background-position-y:{y /
         100}px; scale: {y / maxY / 20 + 1}"
     />
   </div>
