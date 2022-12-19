@@ -6,5 +6,7 @@ export default defineConfig({
 		svelte({
 			/* plugin options */
 		})
-	]
+	], build: {
+		outDir: 'docs',
+	},
 });
