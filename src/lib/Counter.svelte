@@ -13,7 +13,7 @@
 <svelte:window bind:scrollY={y} bind:outerHeight={maxY} />
 
 <div
-  class="flex flex-col gap-20 p-2 w-1/2 mx-auto z-10 relative bg-black border-10 border-black border-opacity-40"
+  class="flex flex-col gap-20 p-6 w-1/2 mx-auto z-10 relative bg-black bg-opacity-70"
   style="z-index: 2;"
 >
   {#each sources as src, i}
